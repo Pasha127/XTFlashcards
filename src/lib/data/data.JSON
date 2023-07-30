@@ -1,1 +1,5 @@
-{}
+{
+  "projects": ["ToDoList"],
+  "users": ["Christie"],
+  "data": { "ToDoList": { "Christie": ["Study Chinese", "Learn React"] } }
+}

@@ -10,30 +10,11 @@ export const server = express();
 export const httpServer = createServer(server);
 const port = process.env.PORT || 3001;
 
-const tempDatabase= {
-    projects: ['ToDoList'],
-    users: ["Christie"],
-    data: {
-        ToDoList:{
-            Christie: [
-                "Study Chinese",
-                "Learn React"
-            ]
-        }
-    }
-}
-//const exampleRequest = {
-//    project: "ToDoList",
-//    user: "Christie",
-//    auth: "",
-//    data: {
-//        
-//    }
-//}
+
 
 
 const JSONFromObj = JSON.stringify(tempDatabase);
-console.log(JSON.parse(JSONFromObj));
+console.log(JSONFromObj);
 console.log(listData);
 
 server.use(cors());
