@@ -29,7 +29,7 @@ const toDoListSchema = {
 };
 
 export const checkToDoListSchema = checkSchema(toDoListSchema);
-export const checkValidationResult = (req, res, next) => {
+export const checkToDOListValidationResult = (req, res, next) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     next(createHttpError(400, "ValidationError in To Do List body"), {
